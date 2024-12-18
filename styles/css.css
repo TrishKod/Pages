@@ -998,7 +998,7 @@ body {
   transition: 0.8s;
 }
 .footer .ft_list_item::before {
-  content: url(../../img/svg/marker.svg);
+  content: url(../../../img/svg/marker.svg);
   position: absolute;
   top: -3px;
   left: -29px;
