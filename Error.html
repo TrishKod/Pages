@@ -11,13 +11,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg" href="./img/svg/icon.svg">
 </head>
 <body>
     
     <header class="section-dark header">
         <div class="container">
             <div class="header-flex">
-                <a href="./Main.html"><img src="./img/svg/logo.svg" alt="Logo" class="logo"></a>
+                <a href="./index.html"><img src="./img/svg/logo.svg" alt="Logo" class="logo"></a>
              
                <div class="icongroup">
                     <a href="https://ru-ru.facebook.com" target="_blank">
@@ -48,16 +49,26 @@
                         <li class="list_item"><a href="#" class="list_item"><img src="./img/svg/storage.svg" alt="Shop"></a></li>
                     </ul>
                </nav>
-
+               <div class="menu">
+                    <img src="./img/svg/menu.svg" alt="Menu">
+               </div>
                <a href="./Error.html">
                     <div class="button">Order Today</div>
                </a>  
             </div>
         </div>
 </header>
+
 <main>
     <div class="container">
-        
+        <div class="error">
+            <h2 class="section_heading">Error 404: Not Found</h2>
+            <div class="line"></div>
+            <p>The page was not found. Apparently, it does not exist or is specified incorrectly.</p>
+            <a href="./index.html">
+                <div class="button">Back To Main</div>
+            </a>
+        </div>
     </div>
 </main>
 
@@ -71,7 +82,11 @@
                     
                <div class="icongroup_ft">
 
-                <div class="icon icon-clear"><a href="https://ru-ru.facebook.com" target="_blank"><img src="./img/svg/facebook-white.svg" alt="Логотип facebook"></a></div>
+                <div class="icon icon-clear">
+                    <a href="https://ru-ru.facebook.com" target="_blank">
+                        <img src="./img/svg/facebook-white.svg" alt="Логотип facebook">
+                    </a>
+                </div>
 
                 <div class="icon icon-clear"><a href="https://x.com/?lang=ru" target="_blank"><img src="./img/svg/twitter-white.svg" alt="Логотип Twitter"></a></div>
 
@@ -81,36 +96,73 @@
                 
                </div>
                 </div>
-                <div>
+                <div class="footer_grid_menu">
                     <h3 class="ft_heading">Explore</h3>
                     <ul class="ft_list">
-                        <li class="ft_list_item"><span></span>Home</li>
-                        <li class="ft_list_item"><span></span>About</li>
-                        <li class="ft_list_item"><span></span>Articles</li>
-                        <li class="ft_list_item"><span></span>Our Store</li>
-                        <li class="ft_list_item"><span></span>Contact Us</li>
+                        <a href="#welcome">
+                            <li class="ft_list_item">Home</li>
+                        </a>
+                        <a href="#about">
+                            <li class="ft_list_item">About</li>
+                        </a>
+                        <a href="#articles">
+                            <li class="ft_list_item">Articles</li>
+                        </a>
+                        <a href="#">
+                            <li class="ft_list_item">Our Store</li>
+                        </a>
+                        <a href="#">
+                            <li class="ft_list_item">Contact Us</li>
+                        </a>
                     </ul>
                 </div>
 
-                <div>
-                    <h3 class="ft_heading"><span></span>Utility Pages</h3>
+                <div class="footer_grid_list">
+                    <h3 class="ft_heading">Utility Pages</h3>
                     <ul class="ft_list">
-                        <li class="ft_list_item"><span></span>Style Guide</li>
-                        <li class="ft_list_item"><span></span>404 Not Found</li>
-                        <li class="ft_list_item"><span></span>Password Protected</li>
-                        <li class="ft_list_item"><span></span>Licenses</li>
-                        <li class="ft_list_item"><span></span>Changelog</li>
+
+                        <a href="#">
+                            <li class="ft_list_item">Style Guide</li>
+                        </a>
+                        <a href="./Error.html">
+                            <li class="ft_list_item">404 Not Found</li>
+                        </a>
+                        <a href="#">
+                            <li class="ft_list_item">Password Protected</li>
+                        </a>
+                        <a href="#">
+                            <li class="ft_list_item">Licenses</li>
+                        </a>
+                        <a href="#">
+                            <li class="ft_list_item">Changelog</li>
+                        </a>
                     </ul>
                 </div>
 
-                <div>
+                <div class="footer_grid_contact">
                     <h3 class="ft_heading">Keep in Touch</h3>
+                    <div class="ft_contact">
+                        <div class="ft_contact_item">
+                            <p>Address :</p>
+                            <a href="#">24A Kingston St, Los Vegas <br> NC 28202, USA.
+                            </a>
+                        </div>
+
+                        <div class="ft_contact_item">
+                            <p>Mail :</p>
+                            <a href="mailto:support@pages.com">support@pages.com</a>
+                        </div>
+
+                        <div class="ft_contact_item">
+                            <p>Phone :</p>
+                            <a href="tel:+221234567900">(+22) 123 - 4567 - 900</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <p class="copyright">© Drafted by VictorFlow - Powered by Webflow</p>
+        <p class="copyright">© Drafted by <a href="https://in.linkedin.com/company/victorflow" target="_blank">VictorFlow</a> - Powered by <a href="https://webflow.com">Webflow</a></p>
     </section>
-
 </footer>
 </body>
 </html>
