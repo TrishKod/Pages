@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error 404</title>
-    <link rel="stylesheet" href="./styles/css.css">
+    <link rel="stylesheet" href="./styles/dist/scss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -14,54 +14,53 @@
 <link rel="icon" type="image/svg" href="./img/svg/icon.svg">
 </head>
 <body>
-    <header class="section-dark header">
-        <div class="container">
-            <div class="header-flex">
-                <a href="./index.html"><img src="./img/svg/logo.svg" alt="Logo" class="logo"></a>
-             
-               <div class="icongroup">
-                    <a href="https://ru-ru.facebook.com" target="_blank">
-                        <div class="icon">
-                            <img src="./img/svg/facebook.svg" alt="Facebook logo">
-                        </div>
-                    </a>
+    <header class="section-dark header" id="header">
+            <div class="container">
+                <div class="header-flex">
+                    <a href="./index.html"><img src="./img/svg/logo.svg" alt="Logo" class="logo"></a>
+                 
+                   <div class="icongroup">
+                        <a href="https://ru-ru.facebook.com" target="_blank">
+                            <div class="icon">
+                                <img src="./img/svg/facebook.svg" alt="Facebook logo">
+                            </div>
+                        </a>
 
-                    <a href="https://x.com/?lang=ru" target="_blank">
-                        <div class="icon">
-                            <img src="./img/svg/twitter.svg" alt="Twitter logo">
-                        </div>
-                    </a>
+                        <a href="https://x.com/?lang=ru" target="_blank">
+                            <div class="icon">
+                                <img src="./img/svg/twitter.svg" alt="Twitter logo">
+                            </div>
+                        </a>
 
-                    <a href="" target="_blank">
-                        <div class="icon">
-                            <img src="./img/svg/in.svg" alt="IN logo">
-                        </div>
-                    </a>
-               </div>
-               
-                <nav>
-                    <ul class="list">
-                        <li class="list_item"><a href="#welcome" class="list_item">Home</a></li>
-                        <li class="list_item"><a href="#about" class="list_item">About</a></li>
-                        <li class="list_item"><a href="#" class="list_item">Pages</a></li>
-                        <li class="list_item"><a href="#" class="list_item">Contact Us</a></li>
-                        <li class="list_item"><a href="#" class="list_item"><img src="./img/svg/storage.svg" alt="Shop"></a></li>
-                    </ul>
-               </nav>
-               <div class="menu">
+                        <a href="./Error.html">
+                            <div class="icon">
+                                <img src="./img/svg/in.svg" alt="IN logo">
+                            </div>
+                        </a>
+                   </div>
+                   
+                    <nav>
+                        <ul class="list">
+                            <li class="list__item"><a href="#welcome" class="list__item">Home</a></li>
+                            <li class="list__item"><a href="#about" class="list__item">About</a></li>
+                            <li class="list__item"><a href="#" class="list__item">Pages</a></li>
+                            <li class="list__item"><a href="#" class="list__item">Contact Us</a></li>
+                            <li class="list__item"><a href="#" class="list__item"><img src="./img/svg/storage.svg" alt="Shop"></a></li>
+                        </ul>
+                   </nav>
+                   <a href="#" target="_blank">
+                        <div class="button">Order Today</div>
+                   </a>  
+                   <div class="menu">
                     <img src="./img/svg/menu.svg" alt="Menu">
-               </div>
-               <a href="./Error.html">
-                    <div class="button">Order Today</div>
-               </a>  
+                    </div>
+                </div>
             </div>
-        </div>
-</header>
-
+    </header>
 <main>
     <div class="container">
         <div class="error">
-            <h2 class="section_heading">Error 404: Not Found</h2>
+            <h2 class="section-heading">Error 404: Not Found</h2>
             <div class="line"></div>
             <p>The page was not found. Apparently, it does not exist or is specified incorrectly.</p>
             <a href="./index.html">
@@ -72,87 +71,74 @@
 </main>
 
 <footer>
-
     <section class="section-dark footer">
         <div class="container">
-            <div class="footer_grid">
-                <div class="footer_grid_socials">
+            <div class="footer-grid">
+                <div class="footer-grid-socials">
                     <img src="./img/svg/logo.svg" alt="Logo" class="logo">
                     
-               <div class="icongroup_ft">
+               <div class="icongroup-ft">
 
-                <div class="icon icon-clear">
-                    <a href="https://ru-ru.facebook.com" target="_blank">
+
+                <a href="https://ru-ru.facebook.com" target="_blank">
+                    <div class="icon icon-clear">
                         <img src="./img/svg/facebook-white.svg" alt="Логотип facebook">
-                    </a>
-                </div>
+                    </div>
+                </a>
 
-                <div class="icon icon-clear"><a href="https://x.com/?lang=ru" target="_blank"><img src="./img/svg/twitter-white.svg" alt="Логотип Twitter"></a></div>
+               
 
-                <div class="icon icon-clear"><a href="" target="_blank"><img src="./img/svg/in-white.svg" alt="Логотип IN"></a></div>
+                <a href="https://x.com/?lang=ru" target="_blank">
+                    <div class="icon icon-clear"><img src="./img/svg/twitter-white.svg" alt="Логотип Twitter"></div>
+                </a>
 
-                <div class="icon icon-clear"><a href="" target="_blank"><img src="./img/svg/inst-white.svg" alt="Логотип IN"></a></div>
+                <a href="https://www.in-com.com" target="_blank">
+                    <div class="icon icon-clear"><img src="./img/svg/in-white.svg" alt="Логотип IN"></div>
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank">
+                    <div class="icon icon-clear"><img src="./img/svg/inst-white.svg" alt="Логотип IN"></div>
+                </a>
                 
                </div>
                 </div>
-                <div class="footer_grid_menu">
-                    <h3 class="ft_heading">Explore</h3>
-                    <ul class="ft_list">
-                        <a href="#welcome">
-                            <li class="ft_list_item">Home</li>
-                        </a>
-                        <a href="#about">
-                            <li class="ft_list_item">About</li>
-                        </a>
-                        <a href="#articles">
-                            <li class="ft_list_item">Articles</li>
-                        </a>
-                        <a href="#">
-                            <li class="ft_list_item">Our Store</li>
-                        </a>
-                        <a href="#">
-                            <li class="ft_list_item">Contact Us</li>
-                        </a>
+                <div class="footer-grid-menu">
+                    <h3 class="ft-heading">Explore</h3>
+                    <ul class="ft-list">
+                        <li class="ft-list__item"><a href="#welcome">Home</a></li>
+                        <li class="ft-list__item"><a href="#about">About</a></li>
+                        <li class="ft-list__item"><a href="#articles">Articles</a></li>
+                        <li class="ft-list__item"><a href="#">Our Store</a></li>
+                        <li class="ft-list__item"><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
 
-                <div class="footer_grid_list">
-                    <h3 class="ft_heading">Utility Pages</h3>
-                    <ul class="ft_list">
-
-                        <a href="#">
-                            <li class="ft_list_item">Style Guide</li>
-                        </a>
-                        <a href="./Error.html">
-                            <li class="ft_list_item">404 Not Found</li>
-                        </a>
-                        <a href="#">
-                            <li class="ft_list_item">Password Protected</li>
-                        </a>
-                        <a href="#">
-                            <li class="ft_list_item">Licenses</li>
-                        </a>
-                        <a href="#">
-                            <li class="ft_list_item">Changelog</li>
-                        </a>
+                <div class="footer-grid-list">
+                    <h3 class="ft-heading">Utility Pages</h3>
+                    <ul class="ft-list"> 
+                        <li class="ft-list__item"><a href="#">Style Guide</a></li>
+                        <li class="ft-list__item"><a href="./Error.html">404 Not Found</a></li>
+                        <li class="ft-list__item"><a href="#">Password Protected</a></li>
+                        <li class="ft-list__item"><a href="#">Licenses</a></li>
+                        <li class="ft-list__item"><a href="#">Changelog</a></li>
                     </ul>
                 </div>
 
-                <div class="footer_grid_contact">
-                    <h3 class="ft_heading">Keep in Touch</h3>
-                    <div class="ft_contact">
-                        <div class="ft_contact_item">
+                <div class="footer-grid-contact">
+                    <h3 class="ft-heading">Keep in Touch</h3>
+                    <div class="ft-contact">
+                        <div class="ft-contact__item">
                             <p>Address :</p>
                             <a href="#">24A Kingston St, Los Vegas <br> NC 28202, USA.
                             </a>
                         </div>
 
-                        <div class="ft_contact_item">
+                        <div class="ft-contact__item">
                             <p>Mail :</p>
                             <a href="mailto:support@pages.com">support@pages.com</a>
                         </div>
 
-                        <div class="ft_contact_item">
+                        <div class="ft-contact__item">
                             <p>Phone :</p>
                             <a href="tel:+221234567900">(+22) 123 - 4567 - 900</a>
                         </div>
@@ -162,6 +148,6 @@
         </div>
         <p class="copyright">© Drafted by <a href="https://in.linkedin.com/company/victorflow" target="_blank">VictorFlow</a> - Powered by <a href="https://webflow.com">Webflow</a></p>
     </section>
-</footer>
+</footer> 
 </body>
 </html>
