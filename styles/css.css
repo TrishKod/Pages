@@ -1771,6 +1771,11 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
   }
+  .error .button:hover {
+    border-radius: 0;
+    color: #1B3764;
+    transition: 0;
+  }
 }
 @media screen and (max-width: 425px) {
   .header .icongroup {
