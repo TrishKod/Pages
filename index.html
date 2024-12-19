@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pages</title>
-    <link rel="stylesheet" href="./styles/css.css">
+    <link rel="stylesheet" href="./styles/dist/scss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -46,11 +46,11 @@
                    
                     <nav>
                         <ul class="list">
-                            <li class="list_item"><a href="#welcome" class="list_item">Home</a></li>
-                            <li class="list_item"><a href="#about" class="list_item">About</a></li>
-                            <li class="list_item"><a href="#" class="list_item">Pages</a></li>
-                            <li class="list_item"><a href="#" class="list_item">Contact Us</a></li>
-                            <li class="list_item"><a href="#" class="list_item"><img src="./img/svg/storage.svg" alt="Shop"></a></li>
+                            <li class="list__item"><a href="#welcome" class="list__item">Home</a></li>
+                            <li class="list__item"><a href="#about" class="list__item">About</a></li>
+                            <li class="list__item"><a href="#" class="list__item">Pages</a></li>
+                            <li class="list__item"><a href="#" class="list__item">Contact Us</a></li>
+                            <li class="list__item"><a href="#" class="list__item"><img src="./img/svg/storage.svg" alt="Shop"></a></li>
                         </ul>
                    </nav>
                    <a href="#" target="_blank">
@@ -62,7 +62,7 @@
                 </div>
             </div>
     </header>
-
+ 
     <main>
         <section class="section-dark welcome" id="welcome">
             <div class="container">
@@ -83,7 +83,7 @@
                             <a href="./Error.html"><div class="button button-fake">Read Free Demo⠀</div></a>
                        </div>
                         
-                        <ul class="welcome-grid_list">
+                        <ul class="welcome-grid__list">
                             <li>Pages:<br>
                                 250pages
                             </li>
@@ -102,34 +102,34 @@
             </div>
         </section>
 
-        <section class="section-light about_autor" id="about">
+       <section class="section-light about" id="about">
             <div class="container">
-              <div class="about_autor-flex">
+              <div class="about-flex">
 
                 <div class="border">
                     <img src="./img/png/poster-man.png" alt="Постер с мужчиной" class="shadow">
                 </div>
 
-                <div class="about_autor_table">
-                    <h2 class="section_heading">About The Author</h2>
+                <div class="about-table">
+                    <h2 class="section-heading">About The Author</h2>
                     <div class="line"></div>
                     <p class="info">We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers, where we discover new writers, where children get hooked on the thrill of reading that can last a lifetime.</p>
 
                     <div class="autors">
             
-                        <div class="autors_item">
-                            <p class="autors_item-rate">02</p>
-                            <p class="autors_item-text">Books Published</p>
+                        <div class="autors__item">
+                            <p class="autors__item-rate">02</p>
+                            <p class="autors__item-text">Books Published</p>
                         </div>
                         
-                        <div class="autors_item">
-                            <p class="autors_item-rate">4.5</p>
-                            <p class="autors_item-text">User Reviews</p>
+                        <div class="autors__item">
+                            <p class="autors__item-rate">4.5</p>
+                            <p class="autors__item-text">User Reviews</p>
                         </div>
             
-                        <div class="autors_item">
-                            <p class="autors_item-rate">04</p>
-                            <p class="autors_item-text">Best Seller Awards</p>
+                        <div class="autors__item">
+                            <p class="autors__item-rate">04</p>
+                            <p class="autors__item-text">Best Seller Awards</p>
                         </div>
             
                     </div>
@@ -151,47 +151,47 @@
         <section class="trusted">
             <div class="container">
                 
-                    <h2 class="section_heading">Trusted By The Best</h2>
+                    <h2 class="section-heading">Trusted By The Best</h2>
                     <div class="line"></div>
 
                     <div class="trusted-grid">
 
-                        <div class="trusted-grid_item">
-                            <img src="./img/png/amazen.png" alt="Amazon png">
-                            <h7 class="trusted-grid_item_heading">Amazen Corp.</h7>
-                            <p class="trusted-grid_item_text">They has been helping readers, music lovers, and videophiles find quality material.</p>
+                        <div class="trusted-grid__item">
+                            <img src="./img/png/amazen.png" alt="Amazen">
+                            <h3 class="trusted-grid__item-heading">Amazen Corp.</h3>
+                            <p class="trusted-grid__item-text">They has been helping readers, music lovers, and videophiles find quality material.</p>
                         </div>
                    
-                        <div class="trusted-grid_item">
-                            <img src="./img/png/megan-books.png">
-                            <h7 class="trusted-grid_item_heading">Megan Books.</h7>
-                            <p class="trusted-grid_item_text">We help physical bookstores manage their overstock to the book inventory.</p>
+                        <div class="trusted-grid__item">
+                            <img src="./img/png/megan-books.png" alt="Megan Books">
+                            <h3 class="trusted-grid__item-heading">Megan Books.</h3>
+                            <p class="trusted-grid__item-text">We help physical bookstores manage their overstock to the book inventory.</p>
                         </div>
     
-                        <div class="trusted-grid_item">
-                            <img src="./img/png/megan.png" alt="Amazon png">
-                            <h7 class="trusted-grid_item_heading">Megank</h7>
-                            <p class="trusted-grid_item_text">Bookstore serving up the full spectrum of Black literature and wine black books.</p>
+                        <div class="trusted-grid__item">
+                            <img src="./img/png/megan.png" alt="Megan">
+                            <h3 class="trusted-grid__item-heading">Megank</h3>
+                            <p class="trusted-grid__item-text">Bookstore serving up the full spectrum of Black literature and wine black books.</p>
                         </div>
     
-                        <div class="trusted-grid_item">
-                            <img src="./img/png/urban.png" alt="Amazon png">
-                            <h7 class="trusted-grid_item_heading">Urban Store</h7>
-                            <p class="trusted-grid_item_text">We also carry the latest records, issues of all of your favorite comic books.</p>
+                        <div class="trusted-grid__item">
+                            <img src="./img/png/urban.png" alt="Urban">
+                            <h3 class="trusted-grid__item-heading">Urban Store</h3>
+                            <p class="trusted-grid__item-text">We also carry the latest records, issues of all of your favorite comic books.</p>
                         </div>
                    </div>
 
             </div>
         </section>
 
-        <section class="section-dark get_book">
+        <section class="section-dark get">
             <div class="container">
 
-                <div class="get_book-flex">
+                <div class="get-flex">
 
-                    <div class="get_book-grid">
+                    <div class="get-grid">
 
-                        <h2 class="section_heading">Get Book Copy Today!</h2>
+                        <h2 class="section-heading">Get Book Copy Today!</h2>
                         <div class="line"></div>
                         <p>We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers.</p>
                         <a href="#">
@@ -205,33 +205,33 @@
         </section>
 
         <section class="learn">
-            <h2 class="section_heading">What Will You Learn?</h2>
+            <h2 class="section-heading">What Will You Learn?</h2>
             <div class="line"></div>
             <div class="container">
                     <div class="learn-flex-second">
 
                         <div class="learn-grid">
 
-                            <div class="learn-grid_item">
+                            <div class="learn-grid__item">
                                 <div class="circle">01</div>
                                 <p>Use HDFS & Map Reduce for storing & analyzing data at scale.</p>
                             </div>
             
-                            <div class="learn-grid_item">
+                            <div class="learn-grid__item">
                                 <div class="circle">02</div>
                                 <p>
                                     Consume streaming data using Spark Streaming, Flink, and Storm.
                                 </p>
                             </div>
             
-                            <div class="learn-grid_item">
+                            <div class="learn-grid__item">
                                 <div class="circle">03</div>
                                 <p>
                                     Choose an appropriate data storage technology for your application
                                 </p>
                             </div>
             
-                            <div class="learn-grid_item">
+                            <div class="learn-grid__item">
                                 <div class="circle">04</div>
                                 <p>Analyze non- <br>relational data using HBase, Cassandra, and MongoDB.</p>
                             </div>
@@ -246,66 +246,68 @@
         <section class="section-light knowledge">
             
             <div class="container">
-                    <h2 class="section_heading">Enhance Knowledge & Vision</h2>
+                    <h2 class="section-heading">Enhance Knowledge & Vision</h2>
                     <div class="line"></div>
 
                 <div class="knowledge-grid">
 
-                    <div class="knowledge-grid_item">
+                    <div class="knowledge-grid__item">
 
-                        <p class="knowledge-grid_item_heading">Chapter-1 Get Started Intro</p>
-                        <p class="knowledge-grid_item_text">You can double your knowledge by reading this ever needed book that can last a lifetime.</p>
-                        <ul class="knowledge-grid_item_list">
-                            <li class="knowledge-grid_item_list_item"><span>Pages :</span> 106pages</li>
-                            <li class="knowledge-grid_item_list_item"><span>Length :</span> 2 Hours</li>
+                        <p class="knowledge-grid__item-heading">Chapter-1 Get Started Intro</p>
+                        <p class="knowledge-grid__item-text">You can double your knowledge by reading this ever needed book that can last a lifetime.</p>
+                        <ul class="knowledge-grid__item-list">
+                            <li class="knowledge-grid__item-list__item"><span>Pages :</span> 106pages</li>
+                            <li class="knowledge-grid__item-list__item"><span>Length :</span> 2 Hours</li>
                         </ul>
 
                     </div>
 
-                    <div class="knowledge-grid_item">
-                        <p class="knowledge-grid_item_heading">Chapter-2 The Roman Culture</p>
-                        <p class="knowledge-grid_item_text">It will help to improve your life career with the perfect and needed knowledge about your life.</p>
-                        <ul class="knowledge-grid_item_list">
-                            <li class="knowledge-grid_item_list_item"><span>Pages :</span> 180pages</li>
-                            <li class="knowledge-grid_item_list_item"><span>Length :</span> 3 Hours</li>
+                    <div class="knowledge-grid__item">
+                        <p class="knowledge-grid__item-heading">Chapter-2 The Roman Culture</p>
+                        <p class="knowledge-grid__item-text">It will help to improve your life career with the perfect and needed knowledge about your life.</p>
+                        <ul class="knowledge-grid__item-list">
+                            <li class="knowledge-grid__item-list__item"><span>Pages :</span> 180pages</li>
+                            <li class="knowledge-grid__item-list__item"><span>Length :</span> 3 Hours</li>
                         </ul>
                     </div>
 
-                    <div class="knowledge-grid_item">
-                        <p class="knowledge-grid_item_heading">Chapter-3 How They Servived</p>
-                        <p class="knowledge-grid_item_text">We wanted to create an easy, convenient way for you to get your books & support.</p>
-                        <ul class="knowledge-grid_item_list">
-                            <li class="knowledge-grid_item_list_item"><span>Pages :</span> 250pages</li>
-                            <li class="knowledge-grid_item_list_item"><span>Length :</span> 4 Hours</li>
+                    <div class="knowledge-grid__item">
+                        <p class="knowledge-grid__item-heading">Chapter-3 How They Servived</p>
+                        <p class="knowledge-grid__item-text">We wanted to create an easy, convenient way for you to get your books & support.</p>
+                        <ul class="knowledge-grid__item-list">
+                            <li class="knowledge-grid__item-list__item"><span>Pages :</span> 250pages</li>
+                            <li class="knowledge-grid__item-list__item"><span>Length :</span> 4 Hours</li>
                         </ul>
                     </div>
 
-                     <div class="knowledge-grid_item">
-                        <p class="knowledge-grid_item_heading">Chapter-4 The End Of Romans</p>
-                        <p class="knowledge-grid_item_text">Promote your book via Pages shop to support your writing & reading career.</p>
-                        <ul class="knowledge-grid_item_list">
-                            <li class="knowledge-grid_item_list_item"><span>Pages :</span> 175pages</li>
-                            <li class="knowledge-grid_item_list_item"><span>Length :</span> 3 Hours</li>
+                     <div class="knowledge-grid__item">
+                        <p class="knowledge-grid__item-heading">Chapter-4 The End Of Romans</p>
+                        <p class="knowledge-grid__item-text">Promote your book via Pages shop to support your writing & reading career.</p>
+                        <ul class="knowledge-grid__item-list">
+                            <li class="knowledge-grid__item-list__item"><span>Pages :</span> 175pages</li>
+                            <li class="knowledge-grid__item-list__item"><span>Length :</span> 3 Hours</li>
                         </ul>
                      </div>
 
                 </div>
                 <div class="knowledge-flex">
-                    <div class="button button-long">Start A 15-Days Free Trail</div>
-                    <span class="knowledge_question">Short description about each chapter <a href="#">Have any questions?</a> Contact us</span>
+                    <a href="./Error.html">
+                        <div class="button button-long">Start A 15-Days Free Trail</div>
+                    </a>
+                    <span class="knowledge-question">Short description about each chapter <a href="#">Have any questions?</a> Contact us</span>
                 </div>
             </div>
         </section>
 
-        <section class="readers">
+       <section class="readers">
             <div class="container">
-                <div class="readers_flex">
-                    <div class="readers_info">
+                <div class="readers-flex">
+                    <div class="readers-info">
                         <h2>Words From Our Readers</h2>
                         <div class="line"></div>
-                        <p class="readers_info_p">We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers, where we discover new writers, where children get hooked on the thrill of reading that can last a lifetime.</p>
+                        <p class="readers-info__p">We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers, where we discover new writers, where children get hooked on the thrill of reading that can last a lifetime.</p>
                         <div>
-                            <div class="readers_info_circles">
+                            <div class="readers-info__circles">
                                 <div class="circle circle-medium"></div>
                                 <div class="circle circle-medium"></div>
                                 <div class="circle circle-medium"></div>
@@ -317,17 +319,17 @@
                             </div>
                         
                         </div>
-                        <p class="readers_info_rating">Overall Customer Ratings</p>
+                        <p class="readers-info__rating">Overall Customer Ratings</p>
                     </div>
     
-                    <div class="readers_cards">
+                    <div class="readers-cards">
                     
-                        <div class="readers_cards_item">
+                        <div class="readers-cards__item">
                             <div class="group">
                                 <div class="avatar">
                                     <img src="./img/png/james.png" alt="Avatar">
                                 </div>
-                            <div class="readers_cards_item_heading">
+                            <div class="readers-cards__item-heading">
                                 <p>James Williams</p>
                                 <div>
                                     <div class="circle circle-XS"></div>
@@ -340,15 +342,14 @@
                                 </div>
                             </div>
                         </div>
-    
                             <p class="quote">“ Great Books Collections ”</p>
                             <p class="comment">I was searching this book for many years and I was happy that I could find it here.</p>
                         </div>
     
-                        <div class="readers_cards_item special">
+                        <div class="readers-cards__item special">
                             <div class="group">
                                 <img src="./img/png/angeline.png" alt="Avatar">
-                            <div class="readers_cards_item_heading">
+                            <div class="readers-cards__item-heading">
                                 <p>Angeline Flora</p>
                                 <div>
                                     <div class="circle circle-XS"></div>
@@ -366,10 +367,10 @@
                             <p class="comment">Sent an email after to books arrived to ask about the author & I received a reply.</p>
                         </div>
     
-                        <div class="readers_cards_item">
+                        <div class="readers-cards__item">
                             <div class="group">
                                 <img src="./img/png/chris.png" alt="Avatar">
-                            <div class="readers_cards_item_heading">
+                            <div class="readers-cards__item-heading">
                                 <p>Chris Adams</p>
                                 <div>
                                     <div class="circle circle-XS"></div>
@@ -393,37 +394,37 @@
 
         <section class="section-light articles">
             <div class="container">
-                    <h2 class="section_heading">Articles & Resources</h2>
+                    <h2 class="section-heading">Articles & Resources</h2>
                     <div class="line"></div>
 
-                <div class="articles_flex">
-                    <div class="articles_card shadow">
+                <div class="articles-flex">
+                    <div class="articles-card shadow">
                         <img src="./img/png/card-1.png" alt="Card 1 IMG">
-                        <div class="articles_card_text">
+                        <div class="articles-card-text">
                             <h2>Significant reading has more info number</h2>
-                            <p class="articles_card_text_info">Override the digital divide with additional clickthroughs from DevOps for real-time schemas.</p>
+                            <p class="articles-card-text__info">Override the digital divide with additional clickthroughs from DevOps for real-time schemas.</p>
                             <a href="#">Readmore⠀</a>
-                            <p class="articles_card_text_date">October 6, 2021</p>
+                            <p class="articles-card-text__date">October 6, 2021</p>
                         </div>
                     </div>
 
-                    <div class="articles_card shadow">
+                    <div class="articles-card shadow">
                         <img src="./img/png/card-2.png" alt="Card 2 IMG">
-                        <div class="articles_card_text">
+                        <div class="articles-card-text">
                             <h2>Many variations of pass majority have suffered</h2>
-                            <p class="articles_card_text_info">Capitalize on low-hanging fruit to identify a ballpark value-added activity to beta test.</p>
+                            <p class="articles-card-text__info">Capitalize on low-hanging fruit to identify a ballpark value-added activity to beta test.</p>
                             <a href="#">Readmore⠀</a>
-                            <p class="articles_card_text_date">October 6, 2021</p>
+                            <p class="articles-card-text__date">October 6, 2021</p>
                         </div>
                     </div>
 
-                    <div class="articles_card shadow">
+                    <div class="articles-card shadow">
                         <img src="./img/png/card-3.png" alt="Card 3 IMG">
-                        <div class="articles_card_text">
+                        <div class="articles-card-text">
                             <h2>Words which don’t look even slightly believable</h2>
-                            <p class="articles_card_text_info">Podcasting operational change management inside of workflows to establish a framework.</p>
+                            <p class="articles-card-text__info">Podcasting operational change management inside of workflows to establish a framework.</p>
                             <a href="#">Readmore⠀</a>
-                            <p class="articles_card_text_date">October 6, 2021</p>
+                            <p class="articles-card-text__date">October 6, 2021</p>
                         </div>
                     </div>
 
@@ -433,12 +434,12 @@
 
        <section class="banner">
             <div class="container">
-                <div class="banner_item shadow">
-                    <h2 class="section_heading">Get The Best Updates</h2>
+                <div class="banner__item shadow">
+                    <h2 class="section-heading">Get The Best Updates</h2>
                     <div class="line"></div>
                     <p>Subscribe with your mail id to know the current update in book edition at your fingertip with in a minute.</p>
                     <form class="input">
-                        <input type="email" placeholder="Your Email ID..." class="input_email"> <input type="submit" value="Subscribe" class="button-form">
+                        <input type="email" placeholder="Your Email ID..." class="input__email"> <input type="submit" value="Subscribe" class="button-form">
                     </form>
                 </div>
             </div>
@@ -446,87 +447,74 @@
     </main> 
 
     <footer>
-
         <section class="section-dark footer">
             <div class="container">
-                <div class="footer_grid">
-                    <div class="footer_grid_socials">
+                <div class="footer-grid">
+                    <div class="footer-grid-socials">
                         <img src="./img/svg/logo.svg" alt="Logo" class="logo">
                         
-                   <div class="icongroup_ft">
+                   <div class="icongroup-ft">
 
-                    <div class="icon icon-clear">
-                        <a href="https://ru-ru.facebook.com" target="_blank">
+
+                    <a href="https://ru-ru.facebook.com" target="_blank">
+                        <div class="icon icon-clear">
                             <img src="./img/svg/facebook-white.svg" alt="Логотип facebook">
-                        </a>
-                    </div>
+                        </div>
+                    </a>
 
-                    <div class="icon icon-clear"><a href="https://x.com/?lang=ru" target="_blank"><img src="./img/svg/twitter-white.svg" alt="Логотип Twitter"></a></div>
+                   
 
-                    <div class="icon icon-clear"><a href="" target="_blank"><img src="./img/svg/in-white.svg" alt="Логотип IN"></a></div>
+                    <a href="https://x.com/?lang=ru" target="_blank">
+                        <div class="icon icon-clear"><img src="./img/svg/twitter-white.svg" alt="Логотип Twitter"></div>
+                    </a>
 
-                    <div class="icon icon-clear"><a href="" target="_blank"><img src="./img/svg/inst-white.svg" alt="Логотип IN"></a></div>
+                    <a href="https://www.in-com.com" target="_blank">
+                        <div class="icon icon-clear"><img src="./img/svg/in-white.svg" alt="Логотип IN"></div>
+                    </a>
+
+                    <a href="https://www.instagram.com" target="_blank">
+                        <div class="icon icon-clear"><img src="./img/svg/inst-white.svg" alt="Логотип IN"></div>
+                    </a>
                     
                    </div>
                     </div>
-                    <div class="footer_grid_menu">
-                        <h3 class="ft_heading">Explore</h3>
-                        <ul class="ft_list">
-                            <a href="#welcome">
-                                <li class="ft_list_item">Home</li>
-                            </a>
-                            <a href="#about">
-                                <li class="ft_list_item">About</li>
-                            </a>
-                            <a href="#articles">
-                                <li class="ft_list_item">Articles</li>
-                            </a>
-                            <a href="#">
-                                <li class="ft_list_item">Our Store</li>
-                            </a>
-                            <a href="#">
-                                <li class="ft_list_item">Contact Us</li>
-                            </a>
+                    <div class="footer-grid-menu">
+                        <h3 class="ft-heading">Explore</h3>
+                        <ul class="ft-list">
+                            <li class="ft-list__item"><a href="#welcome">Home</a></li>
+                            <li class="ft-list__item"><a href="#about">About</a></li>
+                            <li class="ft-list__item"><a href="#articles">Articles</a></li>
+                            <li class="ft-list__item"><a href="#">Our Store</a></li>
+                            <li class="ft-list__item"><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
 
-                    <div class="footer_grid_list">
-                        <h3 class="ft_heading">Utility Pages</h3>
-                        <ul class="ft_list">
-
-                            <a href="#">
-                                <li class="ft_list_item">Style Guide</li>
-                            </a>
-                            <a href="./Error.html">
-                                <li class="ft_list_item">404 Not Found</li>
-                            </a>
-                            <a href="#">
-                                <li class="ft_list_item">Password Protected</li>
-                            </a>
-                            <a href="#">
-                                <li class="ft_list_item">Licenses</li>
-                            </a>
-                            <a href="#">
-                                <li class="ft_list_item">Changelog</li>
-                            </a>
+                    <div class="footer-grid-list">
+                        <h3 class="ft-heading">Utility Pages</h3>
+                        <ul class="ft-list"> 
+                            <li class="ft-list__item"><a href="#">Style Guide</a></li>
+                            <li class="ft-list__item"><a href="./Error.html">404 Not Found</a></li>
+                            <li class="ft-list__item"><a href="#">Password Protected</a></li>
+                            <li class="ft-list__item"><a href="#">Licenses</a></li>
+                            <li class="ft-list__item"><a href="#">Changelog</a></li>
                         </ul>
                     </div>
 
-                    <div class="footer_grid_contact">
-                        <h3 class="ft_heading">Keep in Touch</h3>
-                        <div class="ft_contact">
-                            <div class="ft_contact_item">
+                    <div class="footer-grid-contact">
+                        <h3 class="ft-heading">Keep in Touch</h3>
+                        <div class="ft-contact">
+                            <div class="ft-contact__item">
                                 <p>Address :</p>
                                 <a href="#">24A Kingston St, Los Vegas <br> NC 28202, USA.
                                 </a>
                             </div>
 
-                            <div class="ft_contact_item">
+                            <div class="ft-contact__item">
                                 <p>Mail :</p>
                                 <a href="mailto:support@pages.com">support@pages.com</a>
                             </div>
 
-                            <div class="ft_contact_item">
+                            <div class="ft-contact__item">
                                 <p>Phone :</p>
                                 <a href="tel:+221234567900">(+22) 123 - 4567 - 900</a>
                             </div>
@@ -536,11 +524,6 @@
             </div>
             <p class="copyright">© Drafted by <a href="https://in.linkedin.com/company/victorflow" target="_blank">VictorFlow</a> - Powered by <a href="https://webflow.com">Webflow</a></p>
         </section>
-
-    </footer>
-        
-</body> 
-</html>
-        
+    </footer> 
 </body> 
 </html>
