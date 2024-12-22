@@ -24,6 +24,12 @@ body {
   max-width: 1300px;
 }
 
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: #FFCA42;
+}
+
 .error {
   padding: 194px 0 224px 0;
   max-width: 392px;
@@ -87,6 +93,9 @@ body {
 }
 
 .shadow {
+  box-shadow: 0px 0px 20px 5px #344f7731;
+}
+.shadow-light {
   box-shadow: 0px 5px 10px 0px #344f7731;
 }
 
@@ -163,7 +172,6 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 589px;
-  height: 506px;
 }
 .welcome-grid .text-h1 {
   margin-top: 15px;
@@ -400,8 +408,8 @@ body {
 .trusted-grid__item-heading {
   font-family: Cardo;
   font-size: 24px;
+  font-weight: 400;
   line-height: 33.6px;
-  text-align: center;
   color: #1B3764;
   margin-bottom: 17px;
 }
@@ -726,6 +734,11 @@ body {
   margin-bottom: 7px;
   margin-right: 50px;
 }
+.readers-cards__item .group .avatar {
+  max-width: 85px;
+  max-height: 85px;
+  border-radius: 50%;
+}
 .readers-cards__item .quote {
   font-family: Cardo;
   font-size: 22px;
@@ -788,7 +801,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.articles-card:nth-child(3) .articles_card_text_info {
+.articles-card:nth-child(3) .articles-card-text__info {
   max-width: 313px;
 }
 .articles-card-text {
@@ -900,16 +913,21 @@ body {
 }
 
 .footer {
-  padding: 93px 0 25px 0;
+  padding: 93px 0 30px 0;
 }
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, auto);
   justify-content: space-between;
-  margin: 0 2px 100px -2px;
+  margin: 0 2px 88px -2px;
 }
 .footer-grid a {
   color: #B4C7E7;
+  transition: color 0.8s;
+}
+.footer-grid a:hover {
+  color: #FFCA42;
+  transition: 0.8s;
 }
 .footer-grid-contact {
   margin-right: 85px;
@@ -1003,7 +1021,7 @@ body {
   font-size: 17px;
   font-weight: 400;
   line-height: 25.5px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.35px;
   text-align: center;
   color: #B4C7E7;
 }
@@ -1025,6 +1043,10 @@ body {
   align-items: center;
   transition: color 0.8s, border-radius 0.8s;
 }
+.icon a {
+  display: flex;
+  align-items: center;
+}
 .icon:hover {
   border-radius: 50%;
   background-color: #FFCA42;
@@ -1035,10 +1057,6 @@ body {
   height: 55px;
   background-color: initial;
   border: 1px solid #FFCA42;
-}
-.icon-clear a {
-  display: flex;
-  align-items: center;
 }
 
 a {
@@ -1116,12 +1134,6 @@ a {
   color: #FFCA42;
   border-radius: 0;
   transition: 0.8s;
-}
-
-.line {
-  width: 50px;
-  height: 2px;
-  background-color: #FFCA42;
 }
 
 .circle {
@@ -1694,6 +1706,10 @@ a {
     color: white;
   }
 
+  .footer a:hover {
+    color: #B4C7E7;
+    transition: 0;
+  }
   .footer .ft-contact__item p {
     margin-right: 35px;
     white-space: nowrap;
@@ -1771,6 +1787,7 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
   }
+
   .error .button:hover {
     border-radius: 0;
     color: #1B3764;
